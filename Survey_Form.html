@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Survey</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Shopping Survey Form</h1>
+    <p id="description"><b><i>Thank you for taking the time to complete this survey. Your answers will help us  improve your future shopping experience</b></i></p>
+    <form id="survey-form" action="mailto:amil2645@gmail.com">
+<fieldset>
+<label id="name-label">Please enter your name: 
+<input type="text" required id="name" placeholder="eg. Amil"  /></label>
+<label id="email-label">Please enter your E-mail: 
+<input type="email" required id="email" placeholder="eg. amil@yahoo.com" /></label>
+<label id="number-label">Please enter your age: 
+  <input type="number" required id="number" name="age" min="18" max="120" placeholder="eg. 25" /></label>
+  <label>Gender?
+    <select id="dropdown" name="gender">
+      <option value="">(Select an option)</option>
+      <option value=1>Male</option>
+      <option value=2>Female</option>
+      <option value=3>Prefer not to say</option>
+      </select>
+      </label>
+</fieldset>
+<fieldset>
+  <legend>What is your favourite way to shop? (Please select one)</legend>
+    <br>
+    <label> <input type="radio" name="shopping-type" class="Aligned" value="online">Online Shopping</label>
+    <label><input type="radio" name="shopping-type" class="Aligned" value="instore">Instore Shopping</label>
+<label><input type="radio" name="shopping-type" class="Aligned" value="both">Both of the above</label>
+  </fieldset>
+  <fieldset>
+    <legend>What items do you normally purchase via online shopping? (Select all applicable options)</legend>
+    <label><input type="checkbox" class="aligned" value="electronics">Electronics</label>
+    <label><input type="checkbox" class="aligned" value="groceries">Groceries</label>
+    <label><input type="checkbox" class="aligned" value="fashion">Fashion and accessories</label>
+    <label><input type="checkbox" class="aligned" value="health">Healthcare (Vitamins, etc)</label>
+  </fieldset>
+  <fieldset>
+    <label>What is your favourite part about online shopping? <textarea name="favorite" cols="40" rows="2" placeholder="My favorite part about online shopping is..."></textarea>
+    </fieldset>
+    <fieldset>
+<button type="submit" id="submit">Submit</button>
+</fieldset>
+</form>
+  </body>
+  </html>
